@@ -34,6 +34,9 @@ header {
   justify-content: center;
   flex-wrap: wrap;
 }
+section h2 {
+  text-align: center;
+}
 .mediaContainer .media i {
   color: grey;
 }
@@ -59,7 +62,7 @@ header {
   font-weight: bold;
 }
 .mediaContainer .media input {
-  /* padding: 1rem 30% 1rem 30%; */
+  padding: 1rem 2rem 1rem 2rem;
   border-radius: 20px;
   font-size: 100%;
   border: none;
@@ -67,9 +70,51 @@ header {
   font-weight: bold;
   color: white;
 }
+/* navigation stying */
+.nav {
+  display: flex;
+  justify-content: center;
+  background: rgb(50, 70, 255);
+  margin-top: 1rem;
+}
+.nav .option {
+  font-size: 120%;
+  font-weight: bold;
+  color: white;
+  padding-right: 5%;
+  padding-left: 5%;
+  text-align: center;
+}
+.nav .option:hover {
+  background: grey;
+}
+.activityContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.activityContainer .activity {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 10px;
+  border: solid;
+}
+.activityContainer .actContainer {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 @media (max-width: 400px) {
   .mediaContainer .media p {
     font-size: 120%;
+  }
+}
+@media (max-width: 742px) {
+  .mediaContainer .media input {
+    padding: 1rem 1rem 1rem 1rem;
   }
 }
