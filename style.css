@@ -114,6 +114,26 @@ section h2 {
   flex-direction: column;
   gap: 1rem;
 }
+/* projects styling */
+.projects .asideProContainer {
+  display: flex;
+  width: auto;
+}
+.projects img {
+  width: 40%;
+}
+.projects aside {
+  width: 30%;
+  background-color: brown;
+}
+.projects .project {
+  display: flex;
+  width: auto;
+}
+.projects .projectContainer .description {
+  display: flex;
+  flex-direction: column;
+}
 
 @media (max-width: 400px) {
   .mediaContainer .media p {
@@ -123,5 +143,9 @@ section h2 {
 @media (max-width: 742px) {
   .mediaContainer .media input {
     padding: 1rem 1rem 1rem 1rem;
+  }
+  .projects .projectContainer .description {
+    display: flex;
+    flex-direction: column;
   }
 }
